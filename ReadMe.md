@@ -18,8 +18,9 @@ Open your /.gitignore file and at the end add:
 composer.phar
 /vendor/
 
-# Uncomment line below if you are going to ignore the composer lock file
-# composer.lock
+# Comment the line below if you are going to ignore the composer lock file
+!/composer.lock
+
 ```
 
 
