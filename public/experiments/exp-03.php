@@ -13,3 +13,9 @@ $name = "Isaac";
 $total = 0.0;
 
 echo "Total: {$total}  | Count: $count  | Name: $name";
+
+
+?>
+<p>
+    <a href="../">Back</a>
+</p>

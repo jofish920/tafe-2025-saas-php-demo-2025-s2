@@ -68,6 +68,10 @@ echo "<pre>{$fullname2}</pre>";
     <p>Shortcut display variable within HTML</p>
     <pre><?= $fullname2; ?></pre>
 
+
+    <p>
+        <a href="../">Back</a>
+    </p>
 </div>
 </body>
 </html>

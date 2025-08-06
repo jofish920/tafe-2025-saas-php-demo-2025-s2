@@ -23,3 +23,13 @@
 include __DIR__."/../../app/settings.php";
 
 echo "<p>Do other things</p>";
+
+/*
+ * https://www.twilio.com/en-us/blog/working-with-environment-variables-in-php
+ * https://udoyhasan.medium.com/what-is-an-env-file-and-how-to-use-an-env-file-in-php-4e146358cca6
+ *
+ */
+?>
+<p>
+    <a href="../">Back</a>
+</p>

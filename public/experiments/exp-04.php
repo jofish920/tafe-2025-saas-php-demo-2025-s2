@@ -44,4 +44,7 @@ foreach ($prices as $key=>$value) {
     echo $key." => ". $value." " ;
 }
 
-
+?>
+<p>
+    <a href="../">Back</a>
+</p>
