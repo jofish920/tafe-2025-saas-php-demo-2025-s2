@@ -17,6 +17,8 @@
  *  - c:\users\USERNAME\source\repos\APP_NAME
  *  - /home/USERNAME/APP_NAME
  */
+global $base_path;
+
 $base_path = realpath(__DIR__."/../");
 //echo "<p>" .  $base_path ."</p>";
 
