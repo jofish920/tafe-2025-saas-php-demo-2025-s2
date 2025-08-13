@@ -12,11 +12,13 @@
  *
  * realpath computes the path
  *  - c:\users\USERNAME\source\repos\APP_NAME\app\..
+ *  - /home/USERNAME/APP_NAME\app\..
  * becomes
  *  - c:\users\USERNAME\source\repos\APP_NAME
+ *  - /home/USERNAME/APP_NAME
  */
 $base_path = realpath(__DIR__."/../");
-echo "<p>" .  $base_path ."</p>";
+//echo "<p>" .  $base_path ."</p>";
 
 /*
  * include the autoload file that will add the
@@ -37,8 +39,8 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable($base_path);
 $dotenv->load();
 
-echo "<p>Settings file has been included</p>";
-
-
-$x = $_ENV["APP_NAME"];
-echo "App name: ".$x;
+//echo "<p>Settings file has been included</p>";
+//
+//
+//$x = $_ENV["APP_NAME"];
+//echo "App name: ".$x;
