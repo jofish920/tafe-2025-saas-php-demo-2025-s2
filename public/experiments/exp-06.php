@@ -32,30 +32,34 @@ require_once __DIR__ . "/../../app/settings.php";
 </head>
 <body>
 <?php
+// Read the header from the templates
 require_once $base_path . "/resources/templates/header.php";
 ?>
 <main>
     <header>
         <h2> PAGE HEADER </h2>
     </header>
+
     <article>
         <header>
-    <h3>Main body</h3>
+            <h3>Main body</h3>
         </header>
         <section>
-    <p>
-        Create the folders and files needed using Bash...
-    </p>
+            <p>
+                Create the folders and files needed using Bash...
+            </p>
 
-    <p>
-        Open a new Bash terminal (or split the current
-        one <kbd>ALT</kbd>+<kbd>SHIFT</kbd>+<kbd>-</kbd>)
-    </p>
+            <p>
+                Open a new Bash terminal (or split the current
+                one <kbd>ALT</kbd>+<kbd>SHIFT</kbd>+<kbd>-</kbd>)
+            </p>
 
-    <pre><code>
+            <pre><code>
     cd php-demo-2025-s2/
     mkdir -p resources/templates
+    mkdir -p database/{seeders,migrations}
     touch {resources,resources/templates}/.gitignore
+    touch {database,database/{seeders,migrations}}/.gitignore
     touch resources/templates/{header,footer}.php
     </code></pre>
         </section>
