@@ -35,9 +35,12 @@
                 <p>
                     Open up a new bash terminal (or split the current one using
                     <kbd>ALT</kbd>+<kbd>SHIFT</kbd>+<kbd>-</kbd>), then:
-                    <code>
-
-                    </code>
+                <pre><code>
+cd php-demo-2025-s2/
+mkdir -p resources/templates
+touch {resources,resources/templates}/.gitignore
+touch resources/templates/{header,footer}.php
+</code></pre>
                 </p>
                 <div class="table-ish">
                     <label for="base-path">base_path</label>
