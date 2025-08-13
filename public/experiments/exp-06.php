@@ -22,7 +22,6 @@
 <body>
     <?php
         require_once __DIR__ . "/../../app/settings.php";
-        use \App\Settings;
         global $base_path, $template_path;
         ?>
 

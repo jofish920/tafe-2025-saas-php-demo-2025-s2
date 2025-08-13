@@ -8,6 +8,7 @@
     <title>Home</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header></header>
