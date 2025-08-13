@@ -5,8 +5,14 @@
  */
 ?>
 <header>
-    <h2>
-       PAGE HEADER
-    </h2>
+    <nav>
+    <h1>
+        <?= $_ENV["APP_NAME"]; ?>
+        <!--
+Long hand version of above: <?php echo $_ENV["APP_NAME"]; ?>
+-->
+    </h1>
+    </nav>
+
 </header>
 <?php

@@ -21,27 +21,28 @@
  * require_once     as per require, BUT file inserted ONE TIME ONLY
  */
 
-require_once __DIR__."/../../app/settings.php";
+require_once __DIR__ . "/../../app/settings.php";
 ?>
 <!doctype html>
 <html lang="en_AU">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?=$_ENV["APP_NAME"]; ?></title>
+    <title><?= $_ENV["APP_NAME"]; ?></title>
 </head>
 <body>
 <?php
-require_once $base_path."/resources/templates/header.php";
+require_once $base_path . "/resources/templates/header.php";
 ?>
-<h1>
-    <?= $_ENV["APP_NAME"]; ?>
-<!--
-Long hand version of above: <?php echo $_ENV["APP_NAME"]; ?>
--->
-</h1>
 <main>
+    <header>
+        <h2> PAGE HEADER </h2>
+    </header>
+    <article>
+        <header>
     <h3>Main body</h3>
+        </header>
+        <section>
     <p>
         Create the folders and files needed using Bash...
     </p>
@@ -57,9 +58,11 @@ Long hand version of above: <?php echo $_ENV["APP_NAME"]; ?>
     touch {resources,resources/templates}/.gitignore
     touch resources/templates/{header,footer}.php
     </code></pre>
+        </section>
+    </article>
 </main>
 <?php
-require_once $base_path."/resources/templates/footer.php";
+require_once $base_path . "/resources/templates/footer.php";
 ?>
 </body>
 </html>
