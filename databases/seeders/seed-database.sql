@@ -6,7 +6,8 @@ INSERT INTO categories(id, title, description)
     VALUE (1, 'Unknown', 'Unknown category');
 
 INSERT INTO categories(id, title, description)
-    VALUE (100, 'Pirate', 'Arrrrgggh, we pirates arrrrre very funny');
+    VALUES (2, 'Pun', 'When punished, groan!'),
+        (100, 'Pirate', 'Arrrrgggh, we pirates arrrrre very funny');
 
 INSERT INTO categories(title, description)
 VALUES ('Dad', 'The worst, always the worst'),

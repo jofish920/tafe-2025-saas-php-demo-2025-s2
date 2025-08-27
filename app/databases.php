@@ -30,3 +30,23 @@ catch (PDOException $e) {
     echo "Failed to connect to database ($dbName)";
     echo "</p>";
 }
+
+const MIN_TITLE = 3;
+const MAX_TITLE = 64;
+
+const MIN_DESCRIPTION = 3;
+const MAX_DESCRIPTION = 255;
+
+const DESCRIPTION_RANGE = [MIN_DESCRIPTION, MAX_DESCRIPTION];
+const TITLE_RANGE = [MIN_TITLE, MAX_TITLE];
+
+function checkLength(&$errors, $fieldName, $value, $range): int {
+    [$min, $max] = $range;
+    $length = strlen($value);
+
+    if ($length < $min || $length > $max) {
+        $errors[$fieldName] = "Length must be between $min and $max characters.";
+        return false;
+    }
+    return true;
+}

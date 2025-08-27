@@ -55,10 +55,15 @@
                       hover:underline underline-offset-2 ">
                 Experiment 08
             </a></li>
-        <li><a href="./experiments/exp-09.php"
+        <li><a href="./experiments/exp-09.php?id=2"
                class="text-blue-900 hover:text-blue-700
                       hover:underline underline-offset-2 ">
-                Experiment 09
+                Experiment 09 - Pun
+            </a></li>
+        <li><a href="./experiments/exp-09.php?id=100"
+               class="text-blue-900 hover:text-blue-700
+                      hover:underline underline-offset-2 ">
+                Experiment 09 - Pirates
             </a></li>
         <li><a href="./experiments/exp-10.php"
                class="text-blue-900 hover:text-blue-700

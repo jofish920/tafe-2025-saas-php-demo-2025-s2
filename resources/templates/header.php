@@ -10,6 +10,6 @@
  */
 ?>
     <header>
-        <h1><?= htmlspecialchars($_ENV['APP_NAME']) ?></h1>
+        <h1>SITE HEADER: <?= htmlspecialchars($_ENV['APP_NAME']) ?></h1>
     </header>
 <?php

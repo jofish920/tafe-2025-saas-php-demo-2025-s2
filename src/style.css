@@ -20,3 +20,29 @@
     content: " = ";
 }
 
+.hello {
+    background-color: blue;
+    display: inline-block;
+    position: relative;
+    width: 5ch;
+    height: 1em;
+}
+
+.output-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2ch;
+}
+
+.output-label {
+    grid-column: 1;
+    font-weight: bold;
+}
+
+.output-value {
+    grid-column: 2;
+}
+
+@utility error {
+    @apply text-red-700, text-sm;
+}

@@ -11,7 +11,7 @@
 ?>
 <footer>
     <h2>
-        PAGE FOOTER
+        SITE FOOTER
     </h2>
 </footer>
 <?php
