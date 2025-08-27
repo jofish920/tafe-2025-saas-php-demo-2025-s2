@@ -92,10 +92,22 @@ global $isNewJoke, $errors, $title, $description, $csrf, $rowsUpdated;
                 <?php if (isset($errors['title'])): ?>
                     <p class="error"><?= htmlspecialchars($errors['title']) ?></p>
                 <?php endif; ?>
-                <button
-                        type="submit"
-                        class="inline-block rounded-sm border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden"
-                >Submit</button>
+                <div class="flex justify-between">
+                    <?php if (isset($_POST['id'])): ?>
+                        <button
+                            type="submit"
+                            name="operation"
+                            class="inline-block rounded-sm border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden"
+                            value="update"
+                        >Update</button>
+                    <?php endif; ?>
+                    <button
+                            type="submit"
+                            name="operation"
+                            class="inline-block rounded-sm border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:ring-3 focus:outline-hidden"
+                            value="create"
+                    >Create</button>
+                </div>
 
             </form>
         </section>
